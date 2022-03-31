@@ -1,0 +1,72 @@
+.header {
+  position: relative;
+}
+
+.nav {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  height: 70px;
+  background-color: var(--bg-navbar);
+  padding: 0 30px;
+}
+
+.list {
+  display: flex;
+
+  &Item + &Item {
+    margin-left: 30px;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.logo {
+  margin: 0 auto;
+  display: block;
+}
+
+.switch {
+  margin-left: auto;
+}
+
+.bentoMenu {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: grid;
+  }
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 30px;
+  background-color: var(--bg-mobile-popup);
+  transition: .2s;
+  animation: moveUp .2s ease;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.listItemMobile {
+  & + & {
+    margin-top: 15px;
+  }
+
+  @keyframes moveUp {
+    from {
+      transform: translateY(100%);
+    }
+
+    to {
+      transform: translateY(0);
+    }
+  }
+}

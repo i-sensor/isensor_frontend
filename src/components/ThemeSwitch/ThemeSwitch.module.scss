@@ -1,0 +1,12 @@
+.switch {
+  padding: 0;
+  display: block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,49 @@
+@import "fonts";
+@import "variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: var(--app-min-width);
+  color: var(--default-text-color);
+  font-size: var(--default-font-size);
+  font-family: var(--default-font-family);
+  font-weight: var(--default-font-weight);
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--default-text-color);
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.app {
+  background-color: var(--bg-app);
+  min-height: 100vh;
+  transition: background-color .2s ease-in-out;
+}

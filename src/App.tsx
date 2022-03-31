@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, Navigate } from 'react-router-dom'
+import { Home, Information } from './pages'
+import Layout from './layout/Layout'
+import { useTheme } from './hooks/useTheme'
+import { useLocalStorage } from './hooks/useLocalStorage'
+import { useEffect } from 'react'
 
-function App() {
+const App = () => {
+  const { theme, changeTheme } = useTheme()
+  const [value, setValue] = useLocalStorage<'light' | 'dark'>('theme', theme)
+
+  useEffect(() => {
+    changeTheme && changeTheme(value || 'light')
+  }, [])
+
+  useEffect(() => {
+    setValue(theme)
+  }, [theme])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app" data-theme={theme}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="information" element={<Information />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Route>
+      </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

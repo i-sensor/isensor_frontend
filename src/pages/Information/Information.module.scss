@@ -1,0 +1,18 @@
+.container {
+  margin: 30px auto 0 auto;
+  padding: 0 15px;
+  max-width: 700px;
+}
+
+.wrapper {
+  padding: 15px;
+  background-color: var(--bg-info);
+  border-radius: 5px;
+  color: var(--default-text-color);
+}
+
+.shortInfo {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}

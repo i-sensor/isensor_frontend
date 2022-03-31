@@ -1,0 +1,28 @@
+:root {
+  --default-font-size: 16px;
+  --default-text-color: #141e27;
+  --default-font-weight: 400;
+  --default-font-family: 'Montserrat';
+
+  --bg-navbar: #f7f7f7;
+  --bg-app: #ececec;
+  --bg-bento-menu: #141e27;
+  --bg-mobile-popup: #f7f7f7;
+  --bg-info: #f7f7f7;
+
+  --clr-text-active: #ff8aae;
+  --clr-text: #141e27;
+
+  --app-min-width: 320px;
+}
+
+[data-theme='dark'] {
+  --default-text-color: #e2e2e2;
+
+  --bg-navbar: #1f1f1f;
+  --bg-app: #121212;
+  --bg-bento-menu: #e2e2e2;
+  --bg-info: #1f1f1f;
+
+  --clr-text: #e2e2e2;
+}
