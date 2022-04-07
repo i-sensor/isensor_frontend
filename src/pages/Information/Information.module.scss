@@ -1,18 +1,48 @@
 .container {
-  margin: 30px auto 0 auto;
+  margin: 0 auto;
   padding: 0 15px;
   max-width: 700px;
 }
 
 .wrapper {
+  margin-top: 30px;
   padding: 15px;
   background-color: var(--bg-info);
   border-radius: 5px;
   color: var(--default-text-color);
 }
 
+.heading {
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+
 .shortInfo {
-  margin-top: 20px;
   font-size: 16px;
   font-weight: 400;
+
+  @media (max-width: 575px) {
+    font-size: 14px;
+  }
+}
+
+.divider {
+  margin: 20px 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--bg-divider);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: underline;
+}
+
+.icon {
+  margin-right: 15px;
+  width: 18px;
+  height: 18px;
+  fill: var(--clr-github);
 }
