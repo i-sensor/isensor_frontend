@@ -28,8 +28,27 @@
   display: block;
 }
 
-.switch {
-  margin-left: auto;
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.languageSwitch {
+  margin-right: 30px;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.languageSwitchMobile {
+  display: none;
+  margin-bottom: 30px;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
 }
 
 .bentoMenu {

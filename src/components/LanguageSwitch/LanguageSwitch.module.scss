@@ -1,0 +1,13 @@
+.select {
+  border: none;
+  appearance: none;
+  color: var(--clr-text);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--bg-language-switch);
+  cursor: pointer;
+}
+
+.option {
+  font-size: 14px;
+}
