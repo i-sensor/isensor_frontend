@@ -1,0 +1,18 @@
+{
+  "temperature": {
+    "title": "Temperature from sensors",
+    "label": "Temperature"
+  },
+  "humidity": {
+    "title": "Humidity from sensors",
+    "label": "Humidity"
+  },
+  "pressure": {
+    "title": "Pressure from sensors",
+    "label": "Pressure"
+  },
+  "uv": {
+    "title": "UV from sensors",
+    "label": "UV"
+  }
+}
