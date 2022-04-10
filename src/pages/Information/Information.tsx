@@ -26,7 +26,12 @@ const Information = () => {
           <div className={styles.divider} />
           <ul className={styles.list}>
             <li>
-              <a className={styles.link} href="https://github.com/i-sensor" target="_blank">
+              <a
+                className={styles.link}
+                href="https://github.com/i-sensor"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+              >
                 <GithubIcon className={styles.icon} />
                 {t('information.organization')}
               </a>
