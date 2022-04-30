@@ -48,12 +48,6 @@ const Home = () => {
 
   const handleNumPrefix = (num: number) => (num < 10 ? `0${num}` : num)
 
-  // const transformDate = useMemo(() => {
-  //   return data?.map(dateItem =>
-  //     new Date(dateItem['date'].slice(0, -1)).toLocaleDateString().split('.').slice(0, 2).join('.'),
-  //   )
-  // }, [data])
-
   const transformDate = useMemo(() => {
     return data?.map(dateItem => {
       const date = new Date(dateItem['date'].slice(0, -1))
