@@ -18,7 +18,7 @@ const App = () => {
   }, [theme])
 
   return (
-    <div className="app" data-theme={theme}>
+    <div className="app js-focus-visible focus-visible" data-theme={theme}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

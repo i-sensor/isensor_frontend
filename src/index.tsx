@@ -4,6 +4,7 @@ import App from './App'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { ThemeContextProvider } from './context/theme.context'
 import './i18nextConf'
+import 'focus-visible'
 
 import './styles/globals.scss'
 
