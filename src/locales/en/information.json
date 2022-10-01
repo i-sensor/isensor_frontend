@@ -1,7 +1,7 @@
 {
   "heading_h1": "Open source project",
   "short_info": {
-    "describer": "How this works:",
+    "describer": "How it works:",
     "main": "Data are sent via *ESP8266 to NodeJS server where it is being handled and stored in MySQL"
   },
   "heading_h2": "Github links and links to project are here",
